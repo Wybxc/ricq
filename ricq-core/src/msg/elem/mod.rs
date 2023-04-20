@@ -120,8 +120,7 @@ impl fmt::Display for RQElem {
             RQElem::LightApp(e) => fmt::Display::fmt(e, f),
             RQElem::RichMsg(e) => fmt::Display::fmt(e, f),
             _ => return Ok(()),
-        }?;
-        f.write_str(" ")
+        }
     }
 }
 
